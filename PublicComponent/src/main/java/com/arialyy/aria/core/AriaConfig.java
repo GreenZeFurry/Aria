@@ -134,11 +134,11 @@ public class AriaConfig {
       return;
     }
 
-    NetworkRequest.Builder builder = new NetworkRequest.Builder();
-    NetworkRequest request = builder.addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
-        .addTransportType(NetworkCapabilities.TRANSPORT_WIFI)
-        .addTransportType(NetworkCapabilities.TRANSPORT_CELLULAR)
-        .build();
+    NetworkRequest request= new NetworkRequest.Builder().build();
+//    NetworkRequest request = builder.addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+//        .addTransportType(NetworkCapabilities.TRANSPORT_WIFI)
+//        .addTransportType(NetworkCapabilities.TRANSPORT_CELLULAR)
+//        .build();
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
       cm.registerNetworkCallback(request, new ConnectivityManager.NetworkCallback() {
 

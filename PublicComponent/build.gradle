@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
-
+//apply from: '../maven_publish_aar.gradle'
+//version = '1.0.1'
+//artifact = "ijkplayer"
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
   buildToolsVersion rootProject.ext.buildToolsVersion
