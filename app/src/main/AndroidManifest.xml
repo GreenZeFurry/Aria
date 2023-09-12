@@ -51,15 +51,15 @@
     <activity android:name=".core.download.m3u8.M3U8VodDLoadActivity" />
     <activity android:name=".core.download.m3u8.M3U8LiveDLoadActivity" />
 
-    <provider
-        android:name="androidx.core.content.FileProvider"
-        android:authorities="${applicationId}.provider"
-        android:exported="false"
-        android:grantUriPermissions="true">
-      <meta-data
-          android:name="android.support.FILE_PROVIDER_PATHS"
-          android:resource="@xml/aria_fileprovider_paths" />
-    </provider>
+<!--    <provider-->
+<!--        android:name="androidx.core.content.FileProvider"-->
+<!--        android:authorities="${applicationId}.provider"-->
+<!--        android:exported="false"-->
+<!--        android:grantUriPermissions="true">-->
+<!--      <meta-data-->
+<!--          android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--          android:resource="@xml/aria_fileprovider_paths" />-->
+<!--    </provider>-->
 
     <service android:name=".core.download.service.DownloadService" />
   </application>
