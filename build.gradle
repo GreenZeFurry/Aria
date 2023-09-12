@@ -7,6 +7,22 @@ buildscript {
     mavenCentral()
     google()
     maven { url 'https://jitpack.io' }
+    maven {
+      credentials {
+        username MAVEN_USER
+        password MAVEN_PASSWORD
+      }
+      url MAVEN_RELEASE_URL
+      allowInsecureProtocol true
+    }
+    maven {
+      credentials {
+        username MAVEN_USER
+        password MAVEN_PASSWORD
+      }
+      url MAVEN_SNAPSHOT_URL
+      allowInsecureProtocol true
+    }
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:4.1.3'
@@ -26,6 +42,22 @@ allprojects {
     mavenCentral()
     google()
     maven { url 'https://jitpack.io' }
+    maven {
+      credentials {
+        username MAVEN_USER
+        password MAVEN_PASSWORD
+      }
+      url MAVEN_RELEASE_URL
+      allowInsecureProtocol true
+    }
+    maven {
+      credentials {
+        username MAVEN_USER
+        password MAVEN_PASSWORD
+      }
+      url MAVEN_SNAPSHOT_URL
+      allowInsecureProtocol true
+    }
   }
 
   tasks.withType(Javadoc) {

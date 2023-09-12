@@ -1,5 +1,7 @@
 apply plugin: 'java'
-
+apply from: '../maven_publish_jar.gradle'
+version = '1.0.0'
+artifact = "aria_compiler"
 tasks.withType(JavaCompile) {
   options.encoding = "UTF-8"
 }
@@ -19,4 +21,4 @@ dependencies {
 ext{
   PUBLISH_ARTIFACT_ID = 'compiler'
 }
-apply from: '../gradle/mavenCentral-release.gradle'
+//apply from: '../gradle/mavenCentral-release.gradle'

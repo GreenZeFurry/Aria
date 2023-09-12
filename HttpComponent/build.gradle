@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
-
+apply from: '../maven_publish_aar.gradle'
+version = '1.0.0'
+artifact = "aria_http"
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
   buildToolsVersion rootProject.ext.buildToolsVersion
@@ -38,4 +40,4 @@ dependencies {
 ext{
   PUBLISH_ARTIFACT_ID = 'http'
 }
-apply from: '../gradle/mavenCentral-release.gradle'
+//apply from: '../gradle/mavenCentral-release.gradle'
