@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply from: '../maven_publish_aar.gradle'
+//apply from: '../maven_publish_aar.gradle'
 version = '1.0.0'
 artifact = "public_componet"
 android {
