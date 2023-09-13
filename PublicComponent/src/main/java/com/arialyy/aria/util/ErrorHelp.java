@@ -36,7 +36,7 @@ public class ErrorHelp {
    * @param ex 异常
    */
   public static void saveError(String msg, String ex) {
-    writeLogToFile(String.format("\nmsg【%s】\nException：%s", msg, ex));
+//    writeLogToFile(String.format("\nmsg【%s】\nException：%s", msg, ex));
   }
 
   /**

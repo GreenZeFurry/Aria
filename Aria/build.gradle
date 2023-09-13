@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply from: '../maven_publish_aar.gradle'
-version = '1.0.0'
+version = '1.0.1'
 artifact = "aria"
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -29,14 +29,14 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
 //  implementation "androidx.appcompat:appcompat:${rootProject.ext.XAppcompatVersion}"
-//    api project(path: ':AriaAnnotations')
-//  api project(path: ':PublicComponent')
-//    api project(path: ':HttpComponent')
+    api project(path: ':AriaAnnotations')
+    api project(path: ':PublicComponent')
+    api project(path: ':HttpComponent')
 
-    api 'com.5i5j.common.downloader:aria_http:1.0.0'
-    api 'com.5i5j.common.downloader:aria_common:1.0.0'
-    api 'com.5i5j.common.downloader:aria_annotations:1.0.0'
-    api 'com.5i5j.common.downloader:aria_compiler:1.0.0'
+//    api 'com.5i5j.common.downloader:aria_http:1.0.0'
+//    api 'com.5i5j.common.downloader:aria_common:1.0.0'
+//    api 'com.5i5j.common.downloader:aria_annotations:1.0.0'
+//    api 'com.5i5j.common.downloader:aria_compiler:1.0.0'
 }
 
 //apply from: 'bintray-release.gradle'
